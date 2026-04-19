@@ -39,7 +39,7 @@ merhaba()
 selam("Mehmet")
 iyi_gunler()
 
-##############################################333
+##############################################
 
 def rapor_dec(func):
     def wrapper(*args, **kwargs):
@@ -54,3 +54,6 @@ def topla(a, b):  #Burda artık istediğin kadar parametre alabilirsin.
     return a + b
 
 print(topla(5, 3))
+
+##############################################
+
