@@ -1,3 +1,5 @@
+#Clouser kullanma mantığı fonksiyondan fonksiyon döndürmek için!!
+
 def usAlma(taban):
     def inner(us):
         return taban ** us
@@ -38,7 +40,6 @@ print(yetki("Admin"))
 print(yetki("User"))
 
 ########################################################
-
 def hesap_makinesi(islemAdi):
     def toplam(*args):
         toplam = 0
