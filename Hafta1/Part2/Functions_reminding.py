@@ -44,17 +44,16 @@ sonuc = factorial(3)
 print(sonuc)
 
 #############################################
-#İnner fonksiyonun parametre almak zorunda olmadığı versiyon  ???????????
+#İnner fonksiyonun parametre almak zorunda olmadığı versiyon  
 
 def factorial2(number):
-    def inner2(n):
-        if n <= 1:
-            return 1
-        return n * inner2(n - 1)
-    return inner2(number)
-
-sonuc = factorial2(3)
-print(sonuc)
+    def inner2():
+        sonuc = 1
+        for i in range(1, number+1):
+            sonuc *= i
+        return sonuc
+    return inner2() 
+print(factorial2(3))
 
 ########################################
 
