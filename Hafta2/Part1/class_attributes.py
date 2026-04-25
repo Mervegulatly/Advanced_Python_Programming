@@ -17,16 +17,11 @@
 # item2 = Carditem("Bilgisayar", 70000, 3)
 # item3 = Carditem("Tablet", 20000, 3)
 
-
-
 # print(Carditem.item_count)
 # print(item1.discount_rate)
 
-
-
 # # attributeları tanımladığımızda hem instance methodlarda hem sınıf dışında kullnaılabilir. 
 # # Başlangıçta nasıl oluşturulduysa o şekilde kullanılır.
-
 
 
 class CartItem:
