@@ -11,6 +11,8 @@ class Ogrenci():
 ogrenci1 = Ogrenci("Merve", "Atalay", 90)
 ogrenci2 = Ogrenci("Ali", "Demir", 23)
 
+print(ogrenci1.durum_sorgula())
+print(ogrenci2.durum_sorgula())
 print(Ogrenci.durum_sorgula(ogrenci1))
 print(Ogrenci.durum_sorgula(ogrenci2))
 
