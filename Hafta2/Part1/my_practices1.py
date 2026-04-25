@@ -11,10 +11,14 @@ class Ogrenci():
 ogrenci1 = Ogrenci("Merve", "Atalay", 90)
 ogrenci2 = Ogrenci("Ali", "Demir", 23)
 
+# print(Ogrenci.durum_sorgula(ogrenci1))
+# print(Ogrenci.durum_sorgula(ogrenci2))
+
+print(ogrenci1.__dict__) #Sözlük formatında yazdırır
 print(ogrenci1.durum_sorgula())
+
+print(ogrenci2.__dict__)
 print(ogrenci2.durum_sorgula())
-print(Ogrenci.durum_sorgula(ogrenci1))
-print(Ogrenci.durum_sorgula(ogrenci2))
 
 
 ####################################################
@@ -32,6 +36,8 @@ class Urun():
     @classmethod
     def toplam_urun_sayisini_getir(cls):
         return cls.urun_adet
+    
+print(Urun.toplam_urun_sayisini_getir()) #Burda sıfır ürün var
 
 urun1 = Urun("Telefon", 2000, 3)
 urun2 = Urun("Bilgisayar", 80000, 2)
@@ -55,9 +61,11 @@ class Robot():
 
     @classmethod
     def robot_sayisini_sorgula(cls):
-        return cls.toplam_robot_sayisi
-    
+        print(f"Şu an dünyada {cls.toplam_robot_sayisi} tane robot var")
+
+
 robot1 = Robot("Robo1")
 robot2 = Robot("Robo2")  #Nesne oluşturmayı unutmaa!!!
 
-print(f"Şu an dünyada {Robot.robot_sayisini_sorgula()} tane robot var")
+Robot.robot_sayisini_sorgula()
+robot1.robot_sayisini_sorgula()
