@@ -6,11 +6,8 @@ class Ogrenci():
         self.ders_notu = ders_notu
 
     def durum_sorgula(self):
-        if self.ders_notu >= 50:
-            return "Basarili"
-        else:
-            return "Basarisiz"
-        
+        return "Basarili" if self.ders_notu >= 50 else "Basarisiz"
+            
 ogrenci1 = Ogrenci("Merve", "Atalay", 90)
 ogrenci2 = Ogrenci("Ali", "Demir", 23)
 
