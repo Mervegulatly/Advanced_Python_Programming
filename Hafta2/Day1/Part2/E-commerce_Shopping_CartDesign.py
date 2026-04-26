@@ -25,7 +25,7 @@ class Product:
 class ShoppingCart:
 
     def __init__(self):
-        self.items = {}  # {Product: quantity}
+        self.items = {}  
 
     def add_product(self, product, quantity=1):
         for p in self.items:
