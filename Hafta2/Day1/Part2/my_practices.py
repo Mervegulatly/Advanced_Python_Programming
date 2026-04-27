@@ -15,7 +15,7 @@ class Product():
         else:
             raise ValueError("Fiyat negatif olamaz!")
         
-    def __eq__(self, other):
+    def __eq__(self, other):  #special method
         return self.name == other.name
     
     def __str__(self):
