@@ -1,27 +1,49 @@
 class BaseProduct:
 
-    def __init__(self, stok_kod, _price, agirlik, stok_miktar):
-        self.stok_kod = stok_kod
+    def __init__(self, _stok_kod, _price, _agirlik, _stok_miktar):
+        self._stok_kod = _stok_kod
         self._price = _price
-        self.agirlik = agirlik
-        self.stok_miktar = stok_miktar
+        self._agirlik = _agirlik
+        self._stok_miktar = _stok_miktar
+
+    @property
+    def price(self):
+        return self._price
+    
+    @price.setter
+    def price(self, value):
+        if value > 0:
+            self._price = value
+        else:
+            raise ValueError("Fiyat negatif olamaz!")
+        
+    @property
+    def agirlik(self):
+        return self._agirlik
+    
+    @agirlik.setter
+    def agirlik(self, value):
+        if value > 0:
+            self._agirlik = value
+        else:
+            raise ValueError("Ağırlık 0'dan küçük olamaz!")
 
 class ElectronicProduct(BaseProduct):
 
-    def __init__(self, stok_kod, _price, agirlik, stok_miktar, warranty_period):
-        super().__init__(stok_kod, _price, agirlik, stok_miktar)
+    def __init__(self, _stok_kod, _price, _agirlik, _stok_miktar, warranty_period):
+        super().__init__(_stok_kod, _price, _agirlik, _stok_miktar)
         self.warranty_period = warranty_period
 
 class FoodProduct(BaseProduct):
 
-    def __init__(self, stok_kod, _price, agirlik, stok_miktar, expiry_date):
-        super().__init__(stok_kod, _price, agirlik, stok_miktar)
+    def __init__(self, _stok_kod, _price, _agirlik, _stok_miktar, expiry_date):
+        super().__init__(_stok_kod, _price, _agirlik, _stok_miktar)
         self.expiry_date = expiry_date
 
 class HazardousProduct(BaseProduct):
 
-    def __init__(self, stok_kod, _price, agirlik, stok_miktar, safety_level):
-        super().__init__(stok_kod, _price, agirlik, stok_miktar)
+    def __init__(self, _stok_kod, _price, _agirlik, _stok_miktar, safety_level):
+        super().__init__(_stok_kod, _price, _agirlik, _stok_miktar)
         self.safety_level = safety_level
 
 class InventoryManager:
