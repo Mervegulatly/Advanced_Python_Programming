@@ -13,7 +13,7 @@
 # print(p1.name, p1.price)
 
 
-#PYTHON'DA erişim kontrolleri _, __ gibi işaretlerle olur publice veya, private yerine
+#PYTHON'DA erişim kontrolleri _, __ gibi işaretlerle olur public veya, private yerine
 
 
 class Product:
