@@ -7,7 +7,7 @@ print(type(response))
 print(response.status_code)
 print(response.text)
 
-posts=response.json()
+posts=response.json() # Converts to Python format (list/dict)
 
 #print(type(posts))
 
