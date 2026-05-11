@@ -3,7 +3,7 @@ import sqlite3
 db = sqlite3.connect("final_db.db")
 cursor = db.cursor()
 
-print("Değeri 50'den büyük olanlar:\n")
+print("Değeri 0.5'den büyük olanlar:\n")
 
 cursor.execute("""
 SELECT id, birim_adi, deger, islem_tarihi

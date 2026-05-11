@@ -5,7 +5,7 @@ from request import secilen_kurlar
 db = sqlite3.connect("final_db.db")
 cursor = db.cursor()
 
-# secilen_kurlar = {
+# secilen_kurlar = {  #This is a manuel example
 #     "USD": 1,
 #     "EUR": 0.92,
 #     "GBP": 0.78
