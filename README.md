@@ -1,6 +1,6 @@
 Bu repo; Python ile veritabanı (SQLite), dosya okuma/yazma (CSV), veri sorgulama ve API’den veri çekme gibi konuları içeren örnek çalışmaları barındırır.
 
-## Örnekler (Genel)
+## Genel içerik
 - **Hafta1:** Python temelleri (fonksiyonlar, lambda, koleksiyonlar, filtreleme/sıralama vb.)
 - **Hafta2:** Nesne yönelimli programlama (class/constructor, encapsulation, inheritance, polymorphism vb.)
 - **Hafta3:** Dosya işlemleri (CSV/JSON) + SQLite ile CRUD ve sorgular (Hafta3/Day2 part2)
@@ -9,7 +9,6 @@ Bu repo; Python ile veritabanı (SQLite), dosya okuma/yazma (CSV), veri sorgulam
 ---
 
 # Final_Project - Döviz Kurları (API → SQLite)
-
 
 Bu proje, **exchangerate-api.com** üzerinden döviz kurlarını çekip seçilen para birimlerini **SQLite** veritabanına kaydeder ve temel sorguları ekrana basar.
 
