@@ -1,6 +1,6 @@
 import sqlite3
 
-db = sqlite3.connect("btk_akademi.db")
+db = sqlite3.connect("my_db.db")
 cursor = db.cursor()
 
 #sql = "SELECT SUM(stok_adedi), AVG(fiyat) FROM urunler"  # "WHERE urun_adi LIKE 'I%'""  eklenebilir. 

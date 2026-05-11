@@ -1,6 +1,6 @@
 import sqlite3
 
-db = sqlite3.connect("btk_akademi.db")
+db = sqlite3.connect("my_db.db")
 cursor = db.cursor()
 
 target_id = 4 #Burda da belirtilebilir veya sorgu içinde de belirtilebilr

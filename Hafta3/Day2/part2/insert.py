@@ -1,6 +1,6 @@
 import sqlite3
 
-db = sqlite3.connect("btk_akademi.db")
+db = sqlite3.connect("my_db.db")
 cursor = db.cursor()
 
 sql = "INSERT INTO urunler(urun_adi, fiyat, stok_adedi) VALUES (?, ?, ?, ?)"  #id ye gerek yok eklersek çakışma olabilir.

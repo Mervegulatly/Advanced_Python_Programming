@@ -2,7 +2,7 @@ import sqlite3
 from datetime import datetime
 from request import secilen_kurlar
 
-db = sqlite3.connect("btk_final.db")
+db = sqlite3.connect("final_db.db")
 cursor = db.cursor()
 
 # secilen_kurlar = {

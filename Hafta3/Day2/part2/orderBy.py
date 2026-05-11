@@ -1,6 +1,6 @@
 import sqlite3
 
-db = sqlite3.connect("btk_akademi.db")
+db = sqlite3.connect("my_db.db")
 cursor = db.cursor()
 
 sql = "SELECT * FROM urunler ORDER BY fiyat DESC" #Küçükten büyüğe sıralar default olarak herhangi bir şart vermezsek

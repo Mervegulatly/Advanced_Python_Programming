@@ -1,6 +1,6 @@
 import sqlite3
 
-db = sqlite3.connect("btk_final.db")
+db = sqlite3.connect("final_db.db")
 cursor = db.cursor()
 
 print("Değeri 50'den büyük olanlar:\n")
